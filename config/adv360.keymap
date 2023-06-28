@@ -24,11 +24,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3    &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp BSPC
-        &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &none                                                            &none    &kp J  &kp L  &kp U     &kp Y    &kp SEMI &kp BSLH
-        &mt LCTRL ESC   &mt LALT A     &kp R    &kp S    &kp T      &kp D  &kp LALT        &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &kp RALT &kp H  &kp N  &kp E     &kp I    &mt RALT O    &mt RCTRL SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                              &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp DOWN &kp UP  &kp LBKT &kp RBKT &mo 2
+        &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3    &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp BSPC
+        &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp G  &kp MINUS                                                            &kp EQUAL    &kp J  &kp L  &kp U     &kp Y    &kp SEMI &kp BSLH
+        &mt LCTRL ESC   &kp A     &kp R    &kp S    &kp T      &kp D  &kp LPAR        &kp LALT &none &none &kp RALT           &kp RPAR &kp H  &kp N  &kp E     &kp I    &kp O    &mt RCTRL SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp LGUI &kp RGUI                              &kp K  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &mt LALT EQUAL &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp LCTRL  &kp RCTRL &kp ENTER &kp SPACE              &kp DOWN &kp UP  &kp LBKT &mt RALT RBKT &mo 2
       >;
     };
     keypad {
@@ -46,7 +46,7 @@
         &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &trans &kp LGUI &kp LCTRL &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &kp RCTRL  &kp RGUI  &trans
       >;
     };
     mod {
