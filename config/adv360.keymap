@@ -7,6 +7,7 @@
 #define KEYPAD 1
 #define FN 2
 #define MOD 3
+#define HM(a, b) &hm a b
 
 / {
     behaviors {
@@ -16,9 +17,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
+            global-quick-tap;
             bindings =
                 <&kp>,
                 <&kp>;
@@ -31,8 +33,8 @@
         default_layer {
             bindings = <
     &kp GRAVE          &kp N1    &kp N2    &kp N3          &kp N4  &kp N5     &tog 1                                                     &mo 3  &kp N6         &kp N7     &kp N8    &kp N9         &kp N0       &kp BSPC
-      &kp TAB           &kp Q     &kp W     &kp F           &kp P   &kp G  &kp MINUS                                                 &kp EQUAL   &kp J          &kp L      &kp U     &kp Y       &kp SEMI       &kp BSLH
-&hm LCTRL ESC      &hm LALT A     &kp R     &kp S           &kp T   &kp D   &kp LPAR  &kp LALT      &none          &none   &kp RALT   &kp RPAR   &kp H          &kp N      &kp E     &kp I     &hm RALT O  &hm RCTRL SQT
+    &kp TAB           &kp Q     &kp W     &kp F           &kp P   &kp G  &kp MINUS                                                 &kp EQUAL   &kp J          &kp L      &kp U     &kp Y       &kp SEMI       &kp BSLH
+    &kp ESC      &hm LGUI A     &hm LALT R     &hm LCTRL S  &hm LSHFT T   &kp D   &kp LPAR  &kp LALT      &none          &none   &kp RALT   &kp RPAR   &kp H  &hm RSHFT N  &hm RCTRL E &hm RALT I  &hm RGUI O  &kp SQT
     &kp LSHFT           &kp Z     &kp X     &kp C           &kp V   &kp B                        &kp LGUI       &kp RGUI                         &kp K          &kp M  &kp COMMA   &kp DOT       &kp FSLH      &kp RSHFT
         &mo 2  &mt LALT EQUAL  &kp CAPS  &kp LEFT  &hm LALT RIGHT           &kp BSPC   &kp DEL  &kp LCTRL      &kp RCTRL  &kp ENTER  &kp SPACE          &hm RALT DOWN     &kp UP  &kp LBKT  &mt RALT RBKT          &mo 2
             >;
@@ -40,10 +42,10 @@
 
         keypad {
             bindings = <
-&kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5    &trans                                                     &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+  &kp EQUAL   &kp N1    &kp N2    &kp N3     &kp N4  &kp N5    &trans                                                     &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
   &kp TAB     &trans    &trans    &trans     &trans  &trans     &none                                                     &none  &trans   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
   &kp ESC     &trans    &trans    &trans     &trans  &trans     &none  &kp LCTRL  &kp LALT       &kp LGUI  &kp RCTRL      &none  &trans   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
-&kp LSHFT     &trans    &trans    &trans     &trans  &trans                       &kp HOME      &kp PG_UP                        &trans   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
+  &kp LSHFT   &trans    &trans    &trans     &trans  &trans                       &kp HOME      &kp PG_UP                        &trans   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC    &kp DEL   &kp END      &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
             >;
         };
