@@ -93,11 +93,11 @@
 
         nav {
             bindings = <
-&none           &none  &none      &none         &none  &none  &none                                         &none     &none  &none           &none         &none      &none  &none
-&none           &none  &none      &none         &none  &none  &none                                         &none     &none  &kp HOME        &kp UP_ARROW  &kp END    &none  &none
-&none           &none  &none      &none         &none  &none  &none         &none  &none      &none  &none  &none     &none  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none  &none
-&kp LEFT_SHIFT  &none  &none      &none         &none  &none                       &none      &none                   &none  &kp PAGE_DOWN   &none         &kp PG_UP  &none  &kp RIGHT_SHIFT
-&none           &none  &kp LCTRL  &kp LEFT_ALT  &none         &kp LEFT_WIN  &none  &none      &none  &none  &kp LWIN         &none           &kp LEFT_ALT  &kp RCTRL  &none  &none
+&none  &none  &none     &none         &none      &none  &none                                       &none       &none  &none           &none         &none      &none  &none
+&none  &none  &none     &none         &none      &none  &none                                       &none       &none  &kp HOME        &kp UP_ARROW  &kp END    &none  &none
+&none  &none  &none     &none         &none      &none  &none       &none  &none      &none  &none  &none       &none  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none  &none
+&none  &none  &none     &none         &none      &none                     &none      &none                     &none  &kp PAGE_DOWN   &none         &kp PG_UP  &none  &none
+&none  &none  &kp LWIN  &kp LEFT_ALT  &kp LCTRL         &kp LSHIFT  &none  &none      &none  &none  &kp RSHIFT         &kp RCTRL       &kp LEFT_ALT  &kp LWIN   &none  &none
             >;
         };
 
