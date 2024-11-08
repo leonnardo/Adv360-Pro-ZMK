@@ -142,11 +142,11 @@
 
         terminal {
             bindings = <
-&none  &tmux_prefix NUMBER_1  &tmux_prefix NUMBER_2  &tmux_prefix NUMBER_3  &tmux_prefix NUMBER_4  &tmux_prefix N5  &none                                  &none                   &none           &none                       &none             &none                 &none  &none
-&none  &tmux_prefix Q         &tmux_prefix W         &tmux_prefix F         &tmux_prefix P         &tmux_prefix G   &none                                  &none                   &none           &none                       &kp LC(UP_ARROW)  &none                 &none  &none
-&none  &tmux_prefix A         &tmux_prefix R         &tmux_prefix S         &tmux_prefix T         &tmux_prefix D   &none  &none  &none      &none  &none  &none                   &tmux_prefix H  &kp LC(LEFT)                &kp LC(DOWN)      &kp LC(RIGHT)         &none  &none
-&none  &tmux_prefix Z         &tmux_prefix X         &tmux_prefix C         &tmux_prefix V         &tmux_prefix B                 &none      &none                                 &none           &tmux_prefix DOUBLE_QUOTES  &none             &tmux_prefix PERCENT  &none  &none
-&none  &none                  &none                  &none                  &none                                   &none  &none  &none      &none  &none  &tmux_prefix SEMICOLON                  &none                       &none             &none                 &none  &none
+&none  &tmux_prefix NUMBER_1  &tmux_prefix NUMBER_2  &tmux_prefix NUMBER_3  &tmux_prefix NUMBER_4  &tmux_prefix N5  &none                                  &none                   &none           &none               &none             &none                 &none  &none
+&none  &tmux_prefix Q         &tmux_prefix W         &tmux_prefix F         &tmux_prefix P         &tmux_prefix G   &none                                  &none                   &none           &none               &kp LC(UP_ARROW)  &none                 &none  &none
+&none  &tmux_prefix A         &tmux_prefix R         &tmux_prefix S         &tmux_prefix T         &tmux_prefix D   &none  &none  &none      &none  &none  &none                   &tmux_prefix H  &kp LC(LEFT)        &kp LC(DOWN)      &kp LC(RIGHT)         &none  &none
+&none  &tmux_prefix Z         &tmux_prefix X         &tmux_prefix C         &tmux_prefix V         &tmux_prefix B                 &none      &none                                 &none           &tmux_prefix MINUS  &none             &tmux_prefix PERCENT  &none  &none
+&none  &none                  &none                  &none                  &none                                   &none  &none  &none      &none  &none  &tmux_prefix SEMICOLON                  &none               &none             &none                 &none  &none
             >;
 
             label = "Terminal";
