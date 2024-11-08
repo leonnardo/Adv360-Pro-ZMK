@@ -85,6 +85,18 @@
         };
     };
 
+    macros {
+        tmux_prefix: tmux_prefix {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(A) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "TMUX_PREFIX";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -130,11 +142,11 @@
 
         terminal {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none         &none             &none          &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none         &kp LC(UP_ARROW)  &none          &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &kp LC(LEFT)  &kp LC(DOWN)      &kp LC(RIGHT)  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none         &none             &none          &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none         &none             &none          &none  &none
+&none  &tmux_prefix NUMBER_1  &tmux_prefix NUMBER_2  &tmux_prefix NUMBER_3  &tmux_prefix NUMBER_4  &tmux_prefix N5  &none                                  &none  &none  &none         &none             &none          &none  &none
+&none  &none                  &tmux_prefix W         &none                  &none                  &none            &none                                  &none  &none  &none         &kp LC(UP_ARROW)  &none          &none  &none
+&none  &none                  &none                  &none                  &tmux_prefix T         &none            &none  &none  &none      &none  &none  &none  &none  &kp LC(LEFT)  &kp LC(DOWN)      &kp LC(RIGHT)  &none  &none
+&none  &none                  &none                  &none                  &none                  &none                          &none      &none                &none  &none         &none             &none          &none  &none
+&none  &none                  &none                  &none                  &none                                   &none  &none  &none      &none  &none  &none         &none         &none             &none          &none  &none
             >;
 
             label = "Terminal";
