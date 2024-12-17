@@ -62,13 +62,20 @@
             flavor = "balanced";
             require-prior-idle-ms = <125>;
         };
+
+        caps_word_const: caps_word_const {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_CONST";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE LEFT_PARENTHESIS RIGHT_PARENTHESIS LEFT_BRACKET RIGHT_BRACKET LEFT_BRACE RIGHT_BRACE BACKSPACE MINUS>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         caps_lock {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&caps_word_const>;
             key-positions = <46 59>;
             layers = <0>;
             timeout-ms = <200>;
