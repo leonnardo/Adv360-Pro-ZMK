@@ -143,11 +143,11 @@
 
         twm {
             bindings = <
-&none  &none  &none             &none             &none             &none             &none                                      &none      &none  &none              &none         &none              &none  &none
-&none  &none  &none             &none             &none             &none             &none                                      &none      &none  &kp LS(LA(MINUS))  &kp LA(UP)    &kp LA(LS(EQUAL))  &none  &none
-&none  &none  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &none      &none  &none      &none  &none  &none      &none  &kp LA(LEFT)       &kp LA(DOWN)  &kp LA(RIGHT)      &none  &none
-&none  &none  &none             &none             &none             &none                               &none      &none                    &none  &kp LA(LBKT)       &none         &kp LA(RBKT)       &none  &none
-&none  &none  &none             &kp LSHFT         &kp LCTRL                           &kp LSHFT  &none  &none      &none  &none  &kp RSHFT         &kp LCTRL          &kp RSHIFT    &none              &none  &none
+&none  &none      &none             &none             &none             &none             &none                                      &none      &none  &none              &none         &none              &none  &none
+&none  &none      &none             &none             &none             &none             &none                                      &none      &none  &kp LS(LA(MINUS))  &kp LA(UP)    &kp LA(LS(EQUAL))  &none  &none
+&none  &kp LA(Z)  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &none      &none  &none      &none  &none  &none      &none  &kp LA(LEFT)       &kp LA(DOWN)  &kp LA(RIGHT)      &none  &none
+&none  &none      &none             &none             &none             &none                               &none      &none                    &none  &kp LA(LBKT)       &none         &kp LA(RBKT)       &none  &none
+&none  &none      &none             &kp LSHFT         &kp LCTRL                           &kp LSHFT  &none  &none      &none  &none  &kp RSHFT         &kp LCTRL          &kp RSHIFT    &none              &none  &none
             >;
         };
     };
