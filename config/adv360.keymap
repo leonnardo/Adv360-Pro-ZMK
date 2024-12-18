@@ -10,8 +10,10 @@
 #define MOD 3
 
 &lt {
-    tapping-term-ms = <170>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <180>;
+    quick-tap-ms = <200>;
+    flavor = "balanced";
+    require-prior-idle-ms = <100>;
 };
 
 / {
@@ -31,7 +33,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <44 41 42 43 44>;
@@ -45,7 +47,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
             hold-trigger-key-positions = <29 30 31 32>;
             hold-trigger-on-release;
@@ -60,7 +62,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
 
         caps_word_const: caps_word_const {
