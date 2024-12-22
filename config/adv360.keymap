@@ -36,6 +36,7 @@
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             hold-trigger-key-positions = <44 41 42 43 44>;
+            hold-trigger-on-release;
         };
 
         hmr: homerow_mods_right {
@@ -49,6 +50,7 @@
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             hold-trigger-key-positions = <29 30 31 32>;
+            hold-trigger-on-release;
         };
 
         flt: flt {
