@@ -33,7 +33,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <50>;
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <44 41 42 43 44>;
@@ -47,7 +47,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <50>;
             flavor = "balanced";
             hold-trigger-key-positions = <29 30 31 32>;
             hold-trigger-on-release;
@@ -62,7 +62,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         caps_word_const: caps_word_const {
