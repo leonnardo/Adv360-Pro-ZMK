@@ -82,6 +82,11 @@
             layers = <0>;
             timeout-ms = <200>;
         };
+
+        toggle_nav_alt_super {
+            bindings = <&nav_alt_super>;
+            key-positions = <63 64>;
+        };
     };
 
     macros {
@@ -93,6 +98,14 @@
                 <&kp LC(A) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "TMUX_PREFIX";
+        };
+
+        nav_alt_super: nav_alt_super {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 1>, <&macro_press>, <&kp LEFT_WIN &kp LALT>;
+
+            label = "NAV_ALT_SUPER";
         };
     };
 
