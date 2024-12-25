@@ -86,6 +86,19 @@
         toggle_nav_alt_super {
             bindings = <&nav_alt_super 1 LA(LEFT_WIN)>;
             key-positions = <63 64>;
+            layers = <0>;
+        };
+
+        lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <42 41>;
+            layers = <0>;
+        };
+
+        rpar {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <42 43>;
+            layers = <0>;
         };
     };
 
