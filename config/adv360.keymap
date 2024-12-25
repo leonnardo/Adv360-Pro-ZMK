@@ -100,6 +100,18 @@
             key-positions = <42 43>;
             layers = <0>;
         };
+
+        lbkt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <41 40>;
+            layers = <0>;
+        };
+
+        rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <43 44>;
+            layers = <0>;
+        };
     };
 
     macros {
