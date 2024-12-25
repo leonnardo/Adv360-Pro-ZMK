@@ -84,7 +84,7 @@
         };
 
         toggle_nav_alt_super {
-            bindings = <&nav_alt_super>;
+            bindings = <&nav_alt_super 1 LA(LEFT_WIN)>;
             key-positions = <63 64>;
         };
     };
@@ -101,9 +101,13 @@
         };
 
         nav_alt_super: nav_alt_super {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog 1>, <&macro_press>, <&kp LEFT_WIN &kp LALT>;
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_param_2to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_press>;
 
             label = "NAV_ALT_SUPER";
         };
