@@ -156,11 +156,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE   &kp N1             &kp N2        &kp N3           &kp N4           &kp N5  &kp MINUS                                                         &kp EQUAL     &kp N6  &kp N7           &kp N8            &kp N9        &kp N0              &kp BSPC
-&kp TAB     &kp Q              &kp W         &kp F            &kp P            &kp G   &kp LBKT                                                          &kp RBKT      &kp J   &kp L            &kp U             &kp Y         &kp SEMI            &kp BSLH
-&kp ESCAPE  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_WIN S  &hml LEFT_ALT T  &kp D   &kp LPAR          &tog 2         &none      &none  &kp RIGHT_WIN  &kp RPAR      &kp H   &hmr LEFT_ALT N  &hmr RIGHT_WIN E  &hmr RCTRL I  &hmr RIGHT_SHIFT O  &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z              &kp X         &kp C            &kp V            &kp B                                    &none      &none                               &kp K   &kp M            &kp COMMA         &kp DOT       &kp FSLH            &kp RSHFT
-&mo 4       &none              &none         &none            &none                    &flt 1 BACKSPACE  &flt 3 DELETE  &none      &none  &flt 3 ENTER   &flt 1 SPACE          &none            &none             &none         &none               &mo 4
+&kp GRAVE   &kp N1             &kp N2        &kp N3           &kp N4           &kp N5  &kp MINUS                                                           &kp EQUAL     &kp N6  &kp N7           &kp N8            &kp N9        &kp N0              &kp BSPC
+&kp TAB     &kp Q              &kp W         &kp F            &kp P            &kp G   &kp LBKT                                                            &kp RBKT      &kp J   &kp L            &kp U             &kp Y         &kp SEMI            &kp BSLH
+&kp ESCAPE  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_WIN S  &hml LEFT_ALT T  &kp D   &kp LPAR          &none          &tog 5      &tog 2  &kp RIGHT_WIN  &kp RPAR      &kp H   &hmr LEFT_ALT N  &hmr RIGHT_WIN E  &hmr RCTRL I  &hmr RIGHT_SHIFT O  &kp SINGLE_QUOTE
+&kp LSHFT   &kp Z              &kp X         &kp C            &kp V            &kp B                                    &none       &none                                &kp K   &kp M            &kp COMMA         &kp DOT       &kp FSLH            &kp RSHFT
+&kp LCTRL   &none              &none         &kp LEFT_WIN     &kp LEFT_ALT             &flt 1 BACKSPACE  &flt 3 DELETE  &mo 4       &mo 4   &flt 3 ENTER   &flt 1 SPACE          &kp LEFT_ALT     &kp RIGHT_WIN     &none         &none               &kp RIGHT_CONTROL
             >;
         };
 
@@ -204,16 +204,16 @@
             >;
         };
 
-        terminal {
+        num {
             bindings = <
-&none  &tmux_prefix NUMBER_1  &tmux_prefix NUMBER_2  &tmux_prefix NUMBER_3  &tmux_prefix NUMBER_4  &tmux_prefix N5  &none                                  &none                   &none           &none               &none             &none                 &none  &none
-&none  &tmux_prefix Q         &tmux_prefix W         &tmux_prefix F         &tmux_prefix P         &tmux_prefix G   &none                                  &none                   &none           &none               &kp LC(UP_ARROW)  &none                 &none  &none
-&none  &tmux_prefix A         &tmux_prefix R         &tmux_prefix S         &tmux_prefix T         &tmux_prefix D   &none  &none  &none      &none  &none  &none                   &tmux_prefix H  &kp LC(LEFT)        &kp LC(DOWN)      &kp LC(RIGHT)         &none  &none
-&none  &tmux_prefix Z         &tmux_prefix X         &tmux_prefix C         &tmux_prefix V         &tmux_prefix B                 &none      &none                                 &none           &tmux_prefix MINUS  &none             &tmux_prefix PERCENT  &none  &none
-&none  &none                  &none                  &none                  &none                                   &none  &none  &none      &none  &none  &tmux_prefix SEMICOLON                  &none               &none             &none                 &none  &none
+&none  &none  &none  &none                    &none              &none  &none                                        &none   &none      &none      &none    &none   &none     &kp BACKSPACE
+&none  &none  &none  &tmux_prefix LEFT_BRACE  &kp RIGHT_BRACE    &none  &none                                        &none   &none      &kp N7     &kp N8   &kp N9  &kp STAR  &kp FSLH
+&none  &none  &none  &kp LPAR                 &kp RPAR           &none  &none  &none  &trans      &trans  &none      &none   &kp EQUAL  &kp N4     &kp N5   &kp N6  &kp PLUS  &kp MINUS
+&none  &none  &none  &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &none                &none       &none                      &none      &kp N1     &kp N2   &kp N3  &none     &none
+&none  &none  &none  &none                    &none                     &none  &none  &none       &none   &kp EQUAL  &kp N0             &kp COMMA  &kp DOT  &none   &none     &none
             >;
 
-            label = "Terminal";
+            label = "num";
         };
 
         twm {
