@@ -176,11 +176,11 @@
 
         fn {
             bindings = <
-&none  &none       &none      &none         &none     &none  &none                                   &none  &none  &none   &none    &none    &none    &none
-&none  &none       &none      &none         &none     &none  &none                                   &none  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
-&none  &kp LSHIFT  &kp LCTRL  &kp LEFT_WIN  &kp LALT  &none  &none  &trans  &none      &none  &none  &none  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none
-&none  &none       &none      &none         &none     &none                 &none      &none                &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
-&none  &none       &none      &none         &none            &none  &none   &none      &none  &none  &none         &none   &none    &none    &none    &none
+&none  &none       &none      &none         &none     &none  &none                                    &none  &none  &none   &none    &none    &none    &none
+&none  &none       &none      &none         &none     &none  &none                                    &none  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
+&none  &kp LSHIFT  &kp LCTRL  &kp LEFT_WIN  &kp LALT  &none  &none  &none  &trans      &trans  &none  &none  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none
+&none  &none       &none      &none         &none     &none                &none       &none                 &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
+&none  &none       &none      &none         &none            &none  &none  &none       &none   &none  &none         &none   &none    &none    &none    &none
             >;
         };
 
@@ -206,11 +206,11 @@
 
         num {
             bindings = <
-&none  &none  &none  &none                    &none              &none  &none                                        &none   &none      &none      &none    &none   &none     &kp BACKSPACE
-&none  &none  &none  &tmux_prefix LEFT_BRACE  &kp RIGHT_BRACE    &none  &none                                        &none   &none      &kp N7     &kp N8   &kp N9  &kp STAR  &kp FSLH
-&none  &none  &none  &kp LPAR                 &kp RPAR           &none  &none  &none  &trans      &trans  &none      &none   &kp EQUAL  &kp N4     &kp N5   &kp N6  &kp PLUS  &kp MINUS
-&none  &none  &none  &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &none                &none       &none                      &none      &kp N1     &kp N2   &kp N3  &none     &none
-&none  &none  &none  &none                    &none                     &none  &none  &none       &none   &kp EQUAL  &kp N0             &kp COMMA  &kp DOT  &none   &none     &none
+&none  &none  &none  &none                    &none              &none  &none                                     &none   &none      &none      &none    &none   &none     &kp BACKSPACE
+&none  &none  &none  &tmux_prefix LEFT_BRACE  &kp RIGHT_BRACE    &none  &none                                     &none   &none      &kp N7     &kp N8   &kp N9  &kp STAR  &kp FSLH
+&none  &none  &none  &kp LPAR                 &kp RPAR           &none  &none  &none  &trans      &trans  &none   &none   &kp EQUAL  &kp N4     &kp N5   &kp N6  &kp PLUS  &kp MINUS
+&none  &none  &none  &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &none                &none       &none                   &none      &kp N1     &kp N2   &kp N3  &none     &none
+&none  &none  &none  &none                    &none                     &none  &none  &none       &none   &trans  &kp N0             &kp COMMA  &kp DOT  &none   &none     &none
             >;
 
             label = "num";
