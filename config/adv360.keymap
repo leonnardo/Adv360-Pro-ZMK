@@ -84,7 +84,7 @@
         };
 
         toggle_nav_alt_super_left {
-            bindings = <&nav_alt_super 1 LA(LEFT_WIN)>;
+            bindings = <&nav_alt_super 2 LA(LEFT_WIN)>;
             key-positions = <49 50>;
             layers = <0>;
         };
@@ -114,7 +114,7 @@
         };
 
         toggle_nav_alt_super_right {
-            bindings = <&nav_alt_super 1 LA(LEFT_WIN)>;
+            bindings = <&nav_alt_super 2 LA(LEFT_WIN)>;
             key-positions = <55 56>;
             layers = <0>;
         };
@@ -158,9 +158,19 @@
             bindings = <
 &kp GRAVE   &kp N1             &kp N2        &kp N3           &kp N4           &kp N5  &kp MINUS                                                        &kp EQUAL     &kp N6  &kp N7           &kp N8         &kp N9        &kp N0              &kp BSPC
 &kp TAB     &kp Q              &kp W         &kp F            &kp P            &kp G   &kp LBKT                                                         &kp RBKT      &kp J   &kp L            &kp U          &kp Y         &kp SEMI            &kp BSLH
-&kp ESCAPE  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_WIN S  &hml LEFT_ALT T  &kp D   &kp LPAR          &mo 5          &mo 2      &none  &none         &kp RPAR      &kp H   &hmr LEFT_ALT N  &hmr RWIN E    &hmr RCTRL I  &hmr RIGHT_SHIFT O  &kp SINGLE_QUOTE
+&kp ESCAPE  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_WIN S  &hml LEFT_ALT T  &kp D   &kp LPAR          &mo 6          &mo 3      &none  &none         &kp RPAR      &kp H   &hmr LEFT_ALT N  &hmr RWIN E    &hmr RCTRL I  &hmr RIGHT_SHIFT O  &kp SINGLE_QUOTE
 &kp LSHFT   &kp Z              &kp X         &kp C            &kp V            &kp B                                    &none      &none                              &kp K   &kp M            &kp COMMA      &kp DOT       &kp FSLH            &kp RSHFT
-&kp LCTRL   &none              &none         &kp LEFT_WIN     &kp LEFT_ALT             &flt 1 BACKSPACE  &flt 3 DELETE  &mo 4      &mo 4  &flt 3 ENTER  &flt 1 SPACE          &kp RALT         &kp RIGHT_WIN  &none         &none               &kp RIGHT_CONTROL
+&kp LCTRL   &none              &none         &kp LEFT_WIN     &kp LEFT_ALT             &flt 2 BACKSPACE  &flt 4 DELETE  &mo 5      &mo 5  &flt 4 ENTER  &flt 2 SPACE          &kp RALT         &kp RIGHT_WIN  &none         &none               &kp RIGHT_CONTROL
+            >;
+        };
+
+        qwerty {
+            bindings = <
+&kp GRAVE   &kp N1            &kp N2       &kp N3          &kp N4          &kp N5  &kp MINUS                                                        &kp EQUAL     &kp N6  &kp N7           &kp N8         &kp N9       &kp N0                &kp BSPC
+&kp TAB     &kp Q             &kp W        &kp E           &kp R           &kp T   &kp LBKT                                                         &kp RBKT      &kp Y   &kp U            &kp I          &kp O        &kp SEMI              &kp BSLH
+&kp ESCAPE  &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_WIN D  &mt LEFT_ALT F  &kp G   &kp LPAR          &mo 6          &mo 3      &none  &none         &kp RPAR      &kp H   &mt RIGHT_ALT J  &mt RWIN K     &mt RCTRL L  &mt RSHIFT SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z             &kp X        &kp C           &kp V           &kp B                                    &none      &none                              &kp N   &kp M            &kp COMMA      &kp DOT      &kp FSLH              &kp RSHFT
+&kp LCTRL   &none             &none        &kp LEFT_WIN    &kp LEFT_ALT            &flt 2 BACKSPACE  &flt 4 DELETE  &mo 5      &mo 5  &flt 4 ENTER  &flt 2 SPACE          &kp RALT         &kp RIGHT_WIN  &none        &none                 &kp RIGHT_CONTROL
             >;
         };
 
@@ -198,7 +208,7 @@
             bindings = <
 &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                             &trans                  &none  &none       &none       &none         &none  &bootloader
 &none        &none         &none         &none         &none         &none         &trans                                                            &trans                  &none  &none       &none       &none         &none  &none
-&none        &none         &none         &to 7         &to 0         &none         &rgb_ug RGB_MEFS_CMD 5  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none         &none  &none
+&none        &none         &none         &to 1         &to 0         &none         &rgb_ug RGB_MEFS_CMD 5  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none         &none  &none
 &none        &none         &none         &none         &none         &none                                        &none      &none                                           &none  &none       &none       &none         &none  &none
 &none        &none         &none         &none         &none                       &none                   &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &out OUT_TOG  &none  &none
             >;
@@ -223,16 +233,6 @@
 &none  &kp LA(Z)  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &none      &none  &none      &none  &none          &none      &none  &kp LA(LEFT)       &kp LA(DOWN)  &kp LA(RIGHT)      &none  &none
 &none  &none      &kp LA(N5)        &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)                          &none      &none                            &none  &kp LA(LBKT)       &none         &kp LA(RBKT)       &none  &none
 &none  &none      &none             &kp LSHFT         &kp LCTRL                           &kp LSHFT  &none  &none      &none  &kp LA(ENTER)  &kp RSHFT         &kp LCTRL          &kp RSHIFT    &none              &none  &none
-            >;
-        };
-
-        qwerty {
-            bindings = <
-&kp GRAVE   &kp N1            &kp N2       &kp N3          &kp N4          &kp N5  &kp MINUS                                                          &kp EQUAL     &kp N6  &kp N7           &kp N8         &kp N9       &kp N0                &kp BSPC
-&kp TAB     &kp Q             &kp W        &kp E           &kp R           &kp T   &kp LBKT                                                           &kp RBKT      &kp Y   &kp U            &kp I          &kp O        &kp SEMI              &kp BSLH
-&kp ESCAPE  &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_WIN D  &mt LEFT_ALT F  &kp G   &kp LPAR          &mo 5          &tog 5      &tog 2  &kp LWIN      &kp RPAR      &kp H   &mt RIGHT_ALT J  &mt RWIN K     &mt RCTRL L  &mt RSHIFT SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z             &kp X        &kp C           &kp V           &kp B                                    &none       &none                               &kp N   &kp M            &kp COMMA      &kp DOT      &kp FSLH              &kp RSHFT
-&kp LCTRL   &none             &none        &kp LEFT_WIN    &kp LEFT_ALT            &flt 1 BACKSPACE  &flt 3 DELETE  &mo 4       &mo 4   &flt 3 ENTER  &flt 1 SPACE          &kp RALT         &kp RIGHT_WIN  &none        &none                 &kp RIGHT_CONTROL
             >;
         };
     };
