@@ -196,11 +196,11 @@
 
         sym {
             bindings = <
-&none      &none          &none        &none      &none            &none             &none                                  &none  &none              &none                 &none                  &none          &none           &none
-&none      &none          &kp AT_SIGN  &kp HASH   &kp DOLLAR       &kp PERCENT       &none                                  &none  &kp CARET          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND  &none           &none
-&kp GRAVE  &kp STAR       &kp PLUS     &kp EQUAL  &kp EXCLAMATION  &kp SINGLE_QUOTE  &none  &none  &none      &none  &none  &none  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp UNDERSCORE  &kp TILDE
-&none      &kp BACKSLASH  &none        &none      &kp PIPE         &none                           &none      &none                &none              &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &kp SLASH       &none
-&none      &none          &none        &none      &none                              &none  &none  &none      &none  &none  &none                     &none                 &none                  &none          &none           &none
+&none      &none          &none                &none                   &none                     &none                      &none                                  &none  &none              &none                 &none                  &none          &none           &none
+&none      &none          &kp AT_SIGN          &kp HASH                &kp DOLLAR                &kp PERCENT                &none                                  &none  &kp CARET          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND  &none           &none
+&kp GRAVE  &kp STAR       &mt LEFT_SHIFT PLUS  &mt LEFT_CONTROL EQUAL  &mt LEFT_WIN EXCLAMATION  &mt LEFT_ALT SINGLE_QUOTE  &none  &none  &none      &none  &none  &none  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp UNDERSCORE  &kp TILDE
+&none      &kp BACKSLASH  &none                &none                   &kp PIPE                  &none                                    &none      &none                &none              &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &kp SLASH       &none
+&none      &none          &none                &none                   &none                                                &none  &none  &none      &none  &none  &none                     &none                 &none                  &none          &none           &none
             >;
         };
 
